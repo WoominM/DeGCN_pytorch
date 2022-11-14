@@ -62,7 +62,7 @@ def str2bool(v):
 
 def get_parser():
     parser = argparse.ArgumentParser(
-        description='Spatial Temporal Graph Convolution Network')
+        description='Deformable Graph Convolution Network')
     parser.add_argument(
         '--work-dir',
         default='./work_dir/temp',
