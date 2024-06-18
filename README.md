@@ -13,7 +13,6 @@ Official PyTorch implementation of "DeGCN : Deformable Graph Convolutional Netwo
 - PyYAML, tqdm, tensorboardX, h5py, sklearn, matplotlib, thop
 - Run `pip install -e torchpack`
 - Run `pip install -e torchlight` 
-- Run `conda install -c conda-forge onnx`
 
 # Data Preparation
 
