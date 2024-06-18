@@ -1,4 +1,9 @@
-# DeGCN
+<h1 align="center"> DeGCN: Deformable Graph Convolutional Networks for Skeleton-Based Action Recognition </h1>
+<p align="center">
+<a href="https://ieeexplore.ieee.org/document/10478824"><img src="https://img.shields.io/badge/IEEE-Paper-blue"></a>
+<a href="https://paperswithcode.com/sota/skeleton-based-action-recognition-on-ntu-rgbd-1?p=degcn-deformable-graph-convolutional-networks"><img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/degcn-deformable-graph-convolutional-networks/skeleton-based-action-recognition-on-ntu-rgbd-1"></a>
+</p>
+
 Official PyTorch implementation of "DeGCN : Deformable Graph Convolutional Networks for Skeleton-Based Action Recognition"
 
 # Prerequisites
