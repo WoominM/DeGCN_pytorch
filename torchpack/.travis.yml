@@ -1,0 +1,25 @@
+language: python
+
+python:
+  - '2.7'
+  - '3.5'
+  - '3.6'
+
+install:
+  - bash travis/install_pytorch.sh
+  - pip install .
+
+script: pytest
+
+deploy:
+  provider: pypi
+  user: kchen
+  password:
+    secure: ZkQJqC75Jfe338ql26VYUM9RjfQhwfqOSOyg5ixo4IQlRXZXHOdB1f0QCbMWo1ZTRZa6fHsvMCGYS/nUUsb+YASdXS+OWOqfjdHo8HZANURrJmcxvSaz9J7fxB6Wir0g5a33KydjUeW8/X8+KirMl2WrYRouWrKiibcdFaBO9xFpdr8xDlteIV/8spqLboaQ6Zi9bkq85UGvE5fxBybONHMhGcnoj13fUPAtAYhrmUNy/KKBrTMjRMXgT3MFB2KhhYIn/l8kLO7pMPYYAbz7P7yBxqEyunbBY8hEzjd8occq0tfltluVpWTod889HenMf5fdjM/uxWtbyawEd3Dl0jAB1immycOxSG3eJpcg4nFvRUAPDk/Z6Vir/k5LtFZy1hPOZjJuLan9t0qtIaY1ap64ninfenRsG0UTmZaZ30/LeVgjqsP3xBTabdtu2JXCrJPWtsRSkq3A4A6Xs6WuH40pmTLpSAsDm+rED7JxNPYygAoC/zp3Z9gJ8i93KTjOpAmF0oQpHd/3vL4h2HQQLBndCYJAfd7He33jng/Uvx8M1RCtbFqwkd1NqLGKbxtYd0GvUNeJ2Num2rvox7aju09B1axIgBZupiTGVJoBrYz5UwoDx/VVXBYu5NTn/om9kyyD0CevgVp6frJrJc6c2qoQWIYluN0OA7A7m7OKT8o=
+  on:
+    branch: master
+    tags: true
+    python: '3.5'
+  distributions: sdist bdist_wheel
+  skip_cleanup: true
+  skip_upload_docs: true
